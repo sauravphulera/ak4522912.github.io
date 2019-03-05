@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modifiers</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Srisakdi" rel="stylesheet">
+<style>
+.navbar{
+	background-color: black;
+	padding: 2%;
+	font-size: 1.2em;
+	transition: 1s;
+}
+.nav-link:hover{
+	transform:scale(1.2);
+	font-size:1.5em;
+	padding-right:10%;
+	padding-left:10%;
+	margin: 10px 10px
+}
+html { 
+  
+  cursor:url(mic16.cur), default;
+}
+#alertBox {
+    position:relative;
+    width:300px;
+    min-height:100px;
+    margin-top:50px;
+    border:1px solid #666;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    background-position:20px 30px;
+}
+h2{ color:black;
+	 border-right: .15em solid orange;
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  font-family: 'Pacifico', cursive;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(60),
+    blink-caret .75s step-end infinite;
+  width:60ch;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 60ch; }
+}
+	
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+body{
+	background: url('car.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	cursor:url(pulse-move.cur), default;
+	
+}
+*{ cursors:url(pulse-move.cur), default;}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.a{
+	text-align: center;
+	position: relative;
+	vertical-align: middle;
+}
+
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	
+  <a class="navbar-brand" href="modifier.html">Modifiers</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Services <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="contact.html">Owner</a>
+      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">App coming soon!</a>
+    </div>
+  </div>
+</nav>
+
+
+	<h2>Modify your environment according to your needs</h2>
+	<!-- Begin Mailchimp Signup Form -->
+
+<div id="mc_embed_signup">
+<form action="https://modifiers.us20.list-manage.com/subscribe/post?u=428e8bc93604ce79f84b95cc4&amp;id=bd9729873a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+	<br><br><br><br><br><br>
+    
+    <div class="clear"><p class="a"><button class="button" type="submit" style="vertical-align:middle"><span>Subscribe </span></p></div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+</body>
+
+
+</html>
